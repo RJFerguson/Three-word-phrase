@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Giphy Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="row">
+      <h4>Enter a three word Phrase:</h4>
+      <div id="images"class="col s4">
+        
+        <form id="giphy-search">
+          <input id="searching" type="text" />
+          <input type='submit'/>
+        </form>
+      </div>
+      <div class="col s4 offset-s1">
+        <input id= "hideSearch" type='submit' value="Hide"/>
+        <input id= "showSearch" type='submit' value="Show"/>
+      </div>
+      </div>
+        <div class ="row">
+          <div id="images0"class="col s4"></div>
+          <div id="images1"class="col s4"></div>
+          <div id="images2"class="col s4"></div>
+        </div>
+        <div class ="row">
+          <div class="col s4"> <input id= "shuffle0" type='submit' value="shuffle"/></div>
+          <div class="col s4"> <input id= "shuffle1" type='submit' value="shuffle"/></div>
+          <div class="col s4"> <input id= "shuffle2" type='submit' value="shuffle"/></div>
+        </div>
+
+
+      <div class="row">
+        <div id="images"class="col s4">
+          <form id="guess">
+            <input id="guess" type="text" />
+            <input type='submit' value="Guess"/>
+          </form>
+        </div>
+      </div>
+
+ 
+
+      <script type="text/javascript" src='index.js'></script>
+  </body>
+</html>
+
