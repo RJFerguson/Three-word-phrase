@@ -2,52 +2,76 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Giphy Search</title>
+    <title>Three Word Phrase</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+
+  <style>
+body {
+    background-image: url("images/hip-square.png");
+}
+</style>
   </head>
   <body>
+    <div class="container">
     <div class="row">
-      <h4>Enter a three word Phrase:</h4>
-      <div id="images"class="col s4">
-        
+      <h1 class="header center teal-text">Three Word Phrase</h1>
+
+      <div class="col s12" class = "center">
+
         <form id="giphy-search">
-          <input id="searching" type="text" />
-          <input type='submit'/>
+          <input id="searching" type="text" placeholder="three word fraiser" class="col s9" />
+          <input type='submit' class='col s2 btn right' value="Gif me"/>
         </form>
       </div>
-      <div class="col s4 offset-s1">
-        <input id= "hideSearch" type='submit' value="Hide"/>
-        <input id= "showSearch" type='submit' value="Show"/>
-      </div>
       </div>
         <div class ="row">
-          <div id="images0"class="col s4"></div>
-          <div id="images1"class="col s4"></div>
-          <div id="images2"class="col s4"></div>
-        </div>
-        <div class ="row">
-          <div class="col s4"> <input id= "shuffle0" type='submit' value="shuffle"/></div>
-          <div class="col s4"> <input id= "shuffle1" type='submit' value="shuffle"/></div>
-          <div class="col s4"> <input id= "shuffle2" type='submit' value="shuffle"/></div>
+
+          <div id="images0"class="col s4"><div>
+            <div class="card">
+              <div class="card-image" id="card-image0">
+                <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/26AHIbtfGWCi2Q2C4" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+              </div>
+              <div class="card-action">
+              </div>
+            </div>
+          </div></div>
+
+          <div id="images1"class="col s4"><div>
+            <div class="card">
+              <div class="card-image" id="card-image1">
+                <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/3oKIPAGZzx2PY1wYjC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+              </div>
+              <div class="card-action">
+              </div>
+            </div>
+          </div>
         </div>
 
+          <div id="images2"class="col s4"><div>
+            <div class="card">
+              <div class="card-image" id="card-image2">
+                <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/iNJmdpZ8gp5sI" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+              </div>
+              <div class="card-action">
+              </div>
+            </div>
+          </div></div>
 
-      <div class="row">
-        <div id="images"class="col s4">
-          <form id="guess">
-            <input id="guess" type="text" />
-            <input type='submit' value="Guess"/>
-          </form>
-        </div>
-      </div>
 
- 
+
+  </div>
+
+</div>
+
 
       <script type="text/javascript" src='index.js'></script>
   </body>
-</html>
+  <footer>
 
+  
+</footer>
+</html>
